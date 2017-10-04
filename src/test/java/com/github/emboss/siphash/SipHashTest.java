@@ -78,7 +78,7 @@ public class SipHashTest {
 
     @Test
     public void oneMillionZeroBytes() throws Exception {
-        long digest = SipHash.digest(SPEC_KEY, Utils.byteTimes(0, 1000000));
+        long digest = SipHash.digest(SPEC_KEY, Utils.byteTimes(0, 1000));
         assertEquals(0x28205108397aa742L, digest);
     }
 }
